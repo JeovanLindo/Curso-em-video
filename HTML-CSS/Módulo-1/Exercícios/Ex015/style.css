@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(42, 42, 42);
+    font-family: monospace;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: gray;
+}
+a{
+    color: rgb(179, 146, 146);
+}
+a:hover{
+    color: rgb(150, 122, 122);
+}

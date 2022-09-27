@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(41, 41, 41);
+    font-family: monospace;
+    color: white;
+}
+a{
+    color: white;
+}
+a:hover {
+    color: gray;
+}
+img:hover {
+    color: gray;
+}

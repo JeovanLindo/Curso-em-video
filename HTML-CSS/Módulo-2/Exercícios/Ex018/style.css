@@ -1,0 +1,29 @@
+@charset "uff-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@font-face {
+    font-family: 'caviar';
+    src: url('fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+}
+@font-face {
+    font-family: wesley;
+    src: url('fonts/wrestlemania/WRESTLEMANIA.ttf') format('truetype');
+}
+
+h1{
+   text-align: center;
+   font-family: 'alfa slab one', cursive;
+   font-weight: normal;
+}
+p{
+    text-align: justify;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+.font2{
+    font-family: 'caviar', cursive;
+}
+.font1{
+    font-family: 'wesley', cursive;
+    font-size: 3em;
+}

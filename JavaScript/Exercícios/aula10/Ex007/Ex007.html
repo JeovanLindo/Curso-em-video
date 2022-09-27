@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+</head>
+<body>
+    <header>
+        <h1>Somando Valores</h1>
+        <div class="ajudao" >
+            <h2 onclick="ajuda()" >COMO FUNCIONA ?</h2>
+        </div>
+    </header>
+    <div class="main" >
+        <div class="numeros" >
+            <input class="nu" type="number" name="t1" id="t1">
+            <input class="nu" type="number" name="t2" id="t2">
+            <input class="butao" type="button" value="Somar" onclick="somar()" >
+            <p class="resul" >Resposta</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        function somar() {
+          /* window.alert ('coe') */
+          var n1 = Number (window.document.querySelector('#t1').value)
+          var n2 = Number (window.document.querySelector('#t2').value)
+          var res = window.document.querySelector('.resul')
+          var s = n1 + n2 
+          res.innerText = s
+        } 
+    </script>
+</body>
+</html>

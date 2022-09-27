@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste java scrip mouse</title>
+</head>
+<body>
+    <header>
+        <h1>Interaja com a bolinha !!</h1>
+    </header>
+    <div class="fundo">
+        <div class="borda" >
+            <div class="nome" >
+                <p>BOLINHA</p>
+             </div>
+            <div class="bloco" >
+               
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        var bloquinho = window.document.querySelector('.bloco')
+        bloquinho.addEventListener('click',clicar)
+        bloquinho.addEventListener('mouseenter',entrar)
+        bloquinho.addEventListener('mouseout',saiu)
+
+
+        function clicar() {
+            bloquinho.innerText ='CLICOU !!'
+            bloquinho.style.backgroundImage = "url('theogay.jpg')"
+            bloquinho.style.backgroundPosition = "center"
+            bloquinho.style.color = "black"
+        }
+
+        function entrar() {
+            bloquinho.innerText ='ENTROU'
+            bloquinho.style.background = '#618152'
+            bloquinho.style.color = "white"   
+        }
+
+        function saiu() {
+            bloquinho.innerText ='SAIU'
+            bloquinho.style.background = '#402B23'
+            bloquinho.style.color = "white"
+        }
+    </script>
+
+</body>
+</html>

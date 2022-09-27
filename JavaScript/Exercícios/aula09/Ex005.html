@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n é DOM é prática</title>
+    <style>
+        body{
+            background-color: rgb(42, 71, 99);
+            color: white;
+            text-align: center;
+            height: 100vh;
+        }
+        p, h1 {
+            border-radius: 10px;
+            background-color: rgb(62, 112, 158);
+            width: 30%;
+            padding: 15px 0px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 6px 7px 4px rgba(0, 0, 0, 0.315) ;
+        } 
+    </style>
+</head>
+<body>
+     <h1>Testando o DOM</h1>
+     <p>Será q o DOM existe ?</p>
+     <p class="messi">o messi é DOM ?</p>
+     <p id="sera">sera q eu sou webDOM ?</p>
+
+     <script>
+        var nome = window.document.body.getElementsByTagName('p')[0]
+        var messi1 = window.document.body.getElementsByClassName('messi')[0]
+        var seras = window.document.getElementById('sera')
+        var test1 = window.document.querySelector('.messi')
+        /* window.document.writeln(nome.innerText)
+        window.document.writeln(messi1.innerText)
+        window.document.writeln(seras.innerText) */
+        window.document.write(test1.innerText)
+        test1.style.color = 'black'
+     </script>
+</body>
+</html>

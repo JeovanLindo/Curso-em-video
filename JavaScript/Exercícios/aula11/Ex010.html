@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="detran.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN KRLH</title>
+</head>
+<body>
+    <header>
+        <h1>Bote a velocidade do seu carro abaixo &downarrow;</h1>
+    </header>
+    <main>
+        <div class="bg" >
+            <div class="" >
+                Digite aqui &rightarrow;<input type="number" name="tvel" id="tvel">
+                <input type="button" value="Enviar" onclick="enviar()" >
+            </div>
+            <p>Sua velocidade é : <strong id="tresp1" ></strong>km/h</p>
+            <h2 id="tresp2" >Aguarde sua resposta...</h2>
+        </div>
+    </main>
+   
+
+    <script>
+        function enviar(){
+           var vel = Number (window.document.querySelector('input#tvel').value)
+           var resp = (window.document.querySelector('strong#tresp1'))
+           var resp2 = (window.document.querySelector('h2#tresp2'))
+         
+           resp.innerHTML = `${vel}`
+           if (vel > 60) {
+           resp2.innerHTML = 'Você ultrapassou o limite de velocidade, Você será MULTADO !!!'
+           }else{
+            resp2.innerHTML = 'Dirija com o cinto de segurança !!'
+           }
+        }
+    </script>
+</body>
+</html>

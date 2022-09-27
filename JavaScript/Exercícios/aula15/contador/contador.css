@@ -1,0 +1,93 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8EACBF;
+}
+
+body {
+    background-color: #141726;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.stro {
+    background-color: #4A678C;
+    padding: 2px 5px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.centro p {
+    margin-bottom: 16px;
+}
+
+input[type=button] {
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #4A678C;
+    cursor: pointer;
+}
+
+input {
+    margin-left: -3px;
+    border: 2px solid #4A678C;
+    font-size: 23px;
+    outline: 0;
+    width: 120px;
+    border-radius:0px 10px 10px 0px;
+    color: #592C34;
+}
+
+.centro {
+    background-color: #4A678C;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 0px ;
+    transition: 0.3s;
+    
+}
+
+.centro:hover {
+    background-color: #222640;
+    transition: 1s;
+}
+
+.centro:hover div {
+    height: 60px;
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.centro div {
+    height: 0;
+    opacity:0;
+    transition: height 0.3s linear,opacity 0.3s linear;
+}
+
+
+footer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+

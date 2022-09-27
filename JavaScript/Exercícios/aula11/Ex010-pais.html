@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pais.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País</title>
+</head>
+<body>
+    <header>
+        <h1>Saiba sua nacionalidade !!!</h1>
+    </header>
+    <main>
+        <div class="bg" >
+            Escreva seu País &rarr; <input type="text" name="tpais" id="tpais">
+            <input type="button" value="enviar" onclick="saiba()">
+            <p>Seu país é : <strong id="tseu" ></strong></p>
+            <p>Sua nacionalidade : <strong id="tnac" ></strong></p>
+        </div>
+    </main>
+
+    <script>
+        function saiba(){
+            let pais = window.document.querySelector('input#tpais').value
+            let nac = window.document.querySelector('strong#tnac')
+            let seu = window.document.querySelector('strong#tseu')
+            seu.innerText = (`${pais}`)
+            if (pais =='brasil') {
+                nac.innerHTML = `brasileiro`
+            }else{
+                nac.innerHTML = `estrangeiro`
+            }
+        }
+
+    </script>
+</body>
+</html>
